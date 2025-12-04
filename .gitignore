@@ -1,0 +1,7 @@
+/target
+*.swp
+Cargo.lock
+Cargo.toml
+go.mod
+lai.go
+*.go
