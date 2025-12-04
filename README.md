@@ -191,3 +191,9 @@ lai -p "how do I use the 'ls' command?"
 
 scripts/lai.sh -p "how do I use the 'ls' command?"
 
+# Plays well with nushell
+
+```bash
+~\Mycelium\find\providers> open Hospital_General_Information.csv | where 'State' =~ 'AZ' | first 10 | lai -p "List the hospitals in tucson?" | split row "\n" | explore --index
+
+```
